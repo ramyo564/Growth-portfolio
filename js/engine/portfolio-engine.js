@@ -661,6 +661,10 @@ export function renderCases(cases, containerId = 'cases-container', modalControl
         cta.className = 'case-detail-cta';
         cta.href = item.detailLink || `./case-detail.html?case=${item.number}`;
         cta.textContent = item.detailLinkLabel || '상세 기술 리포트 보기 ↗';
+        if (cta.href.startsWith('http')) {
+            cta.target = '_blank';
+            cta.rel = 'noopener noreferrer';
+        }
         cta.addEventListener('click', () => {
             trackSelectContent({
                 contentType: 'case_detail_link',

@@ -122,5 +122,29 @@ export const portfolioCases = [
         ],
         detailLink: './case3-django.html',
         detailLinkLabel: '상세 기술 아키텍처 PoC 리포트 보기 ↗'
+    },
+    {
+        number: '04',
+        category: 'AI WORKFLOW AUTOMATION & MULTI-AGENT',
+        period: '개인 아키텍처 프로젝트 (기여도 100%)',
+        shortTitle: 'Overmind V2 AI 멀티 에이전트',
+        highlightMetric: '탐색 시간 96.5%↓ (392s → 13.8s)',
+        title: 'Overmind V2 : 마케팅 리서치 & 분석 자동화를 위한 AI 멀티 에이전트 오케스트레이션',
+        summary: '반복적인 시장 조사, 경쟁사 데이터 분석, 비즈니스 문서 탐색의 긴 리드타임을 단축하기 위해 LangGraph 2계층 Hub-and-Spoke 오케스트레이션, 3-Tier Two-Track 분산 벡터 메모리, 100+ AST 정적 린터 기반으로 설계된 차세대 AI 비즈니스 자동화 플랫폼입니다.',
+        metrics: [
+            { label: 'SEARCH SPEED', value: '96.5% 단축 (392.0s → 13.8s)', highlight: true },
+            { label: 'E2E LATENCY', value: '67.6% 단축 (405.0s → 131.0s)' },
+            { label: 'DR RESILIENCE', value: '104단계 장기 세션 무손실 완결' },
+            { label: 'FAULT TOLERANCE', value: '1,500+ 회귀 테스트 결함 0건' }
+        ],
+        evidence: [
+            {
+                tag: 'ARCH',
+                title: 'Overmind V2 4계층 아키텍처 토폴로지 (System Topology)',
+                mermaidId: 'overmind-topology'
+            }
+        ],
+        detailLink: 'https://equinox-rambutan-c3e.notion.site/Growth-Overmind-Before-vs-After-3d22b6d94f8881e5813adc0dd89f864c',
+        detailLinkLabel: '노션 심층 아키텍처 사양서 보기 ↗'
     }
 ];

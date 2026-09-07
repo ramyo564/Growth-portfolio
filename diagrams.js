@@ -61,5 +61,44 @@ export const diagrams = {
         class User,LoginCheck b;
         class Block1,OrderCheck,Block2 o;
         class Allow,Agg g;
+    `,
+
+    'overmind-topology': `
+        graph TB
+        subgraph L1 ["1계층: 프레젠테이션 & 인바운드 게이트웨이 (무상태)"]
+            DISCORD["외부 인터페이스 / Client Gateway"] --> PRESENTER["SafeMarkdown ProgressPresenter"]
+        end
+
+        subgraph L2 ["2계층: 중앙 제어 커맨드 센터 (Hub Orchestrator)"]
+            MASTER_GRAPH["LangGraph MasterGraph (PostgreSQL Checkpointer)"]
+            SLENDER_STATE[("⚡ MasterState 7개 필드 슬림화 (상태 오염 0%)")]
+            PRESENTER --> MASTER_GRAPH --- SLENDER_STATE
+        end
+
+        subgraph L3 ["3계층: 독립 전문 워크플로우 런타임 (Isolated Subgraphs)"]
+            SUBGRAPHS["5대 전문 서브그래프 (Triage / PMOffice / Deep / Brainstorm)"]
+            FACTORY["🏭 OCP AgentFactory & Parameter Object DTO"]
+            MCP_TOOL["🔬 Pydantic AI MCPToolset (로컬 AST Fallback)"]
+            MASTER_GRAPH ==> SUBGRAPHS
+            SUBGRAPHS --- FACTORY
+            SUBGRAPHS --- MCP_TOOL
+        end
+
+        subgraph Shared ["공유 인프라 & 3-Tier 메모리"]
+            L1_REDIS[("L1 Redis O(1) 캐시")]
+            L2_QDRANT[("L2 Qdrant 768차원 밀집 벡터")]
+            L3_GIT["L3 Git SSOT Rehydration"]
+            SUBGRAPHS -.-> L1_REDIS
+            SUBGRAPHS -.-> L2_QDRANT
+            L3_GIT -.-> L2_QDRANT
+        end
+
+        classDef b fill:#161b22,stroke:#58a6ff,color:#c9d1d9;
+        classDef o fill:#161b22,stroke:#d29922,color:#c9d1d9;
+        classDef g fill:#161b22,stroke:#238636,color:#c9d1d9;
+        class DISCORD,PRESENTER b;
+        class MASTER_GRAPH,SLENDER_STATE,FACTORY,MCP_TOOL o;
+        class SUBGRAPHS,L1_REDIS,L2_QDRANT,L3_GIT g;
     `
 };
+
