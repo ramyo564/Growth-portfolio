@@ -9,7 +9,7 @@ export const portfolioConfig = {
     brand: 'YOHAN · TECHNICAL GROWTH HACKER',
     navLinks: [
         { label: 'Case Studies', href: '#cases' },
-        { label: 'A4 Summary ↗', href: '../Portfolio-summary/growth.html', target: '_blank' },
+        { label: 'Resume (이력서) ↗', href: 'https://equinox-rambutan-c3e.notion.site/3c82b6d94f888125b624ef927dc5131d', target: '_blank' },
         { label: 'Django GitHub ↗', href: 'https://github.com/ramyo564/Upgrade_Django4', target: '_blank' },
         { label: 'GitHub Profile ↗', href: 'https://github.com/ramyo564', target: '_blank' },
         { label: 'Contact', href: 'mailto:yohan032yohan@gmail.com' }
