@@ -20,31 +20,31 @@ export const portfolioCases = [
         evidence: [
             {
                 tag: 'BEFORE',
-                title: '1차 광고: 광범위 타겟팅 세팅으로 빈도 1.83 피로 누적 및 전환 누수',
+                title: '1차 광고: 광범위 타겟팅(남녀 13~65세)으로 빈도 1.83 피로 누적 및 전환 누수 대시보드',
                 src: './assets/lush_07_1차 광고 결과 내용.png',
-                alt: 'Lush 1차 광고 결과'
+                alt: 'Lush 1차 광고 메타 관리자 결과'
             },
             {
                 tag: 'AFTER',
-                title: '2차 광고: 여성 18~44 단일화 후 ROAS 4,514% 달성 실측 대시보드',
-                src: './assets/lush_10_3월 5일 _ 3월 9일.png',
-                alt: 'Lush 2차 광고 ROAS 대시보드'
+                title: '2차 광고: 여성 18~44세 타겟 단일화로 빈도 1.20 안정화 & 광고비 53.5% 절감 실측 대시보드',
+                src: './assets/lush_39_결과 값.png',
+                alt: 'Lush 2차 광고 메타 관리자 실측 결과'
             },
             {
                 tag: 'EVIDENCE',
-                title: '스마트스토어 주문 관리자: 5일간 79개 배송 완료 및 주간 172건 주문 폭주',
+                title: '2차 위닝 광고 시안: 샴푸 3종 분산 대신 \'더티 바디스프레이\' 36% 파격 할인 단독 소구',
+                src: './assets/lush_34_광고시안.png',
+                alt: 'Lush 더티 스프레이 위닝 광고 시안'
+            },
+            {
+                tag: 'EVIDENCE',
+                title: '스마트스토어 주문 관리자: 2차 광고 집행 기간 더티 스프레이 집중 주문 및 주간 172건 폭주',
                 src: './assets/lush_22_3월 5일 _ 3월 12일 금요일 _총 7일_ 주문 1.png',
-                alt: '스마트스토어 주문 172건 폭주'
-            },
-            {
-                tag: 'EVIDENCE',
-                title: '검색 트리거 확인 및 톡톡 CS 매출연동 수수료 0.24% 방어 로그',
-                src: './assets/lush_15_1_ 검증__해당 지갑 문의 같은 경우 처음 질문이 재.png',
-                alt: '네이버 톡톡 CS 0.24% 수수료 방어'
+                alt: '스마트스토어 주문 172건 폭주 실측'
             }
         ],
-        detailLink: '../Portfolio-summary/growth.html',
-        detailLinkLabel: 'A4 요약 리포트 검증 ↗'
+        detailLink: './case1-lush.html',
+        detailLinkLabel: '상세 그로스 전략 & 실측 분석 리포트 보기 ↗'
     },
     {
         number: '02',
@@ -63,31 +63,31 @@ export const portfolioCases = [
         evidence: [
             {
                 tag: 'BEFORE',
-                title: '국내 케찹 시장 4분면 포지셔닝 분석 및 브랜드 검색량 조사',
+                title: '국내 케찹 시장 4분면 포지셔닝 분석: 초고가(6,166원) 프리미엄 틈새 시장 도출',
                 src: './assets/tiptree_01_포지션 _가격_브랜드_선호도__.png',
-                alt: '케찹 시장 4분면 포지셔닝'
+                alt: '케찹 시장 4분면 포지셔닝 맵'
             },
             {
                 tag: 'AFTER',
-                title: 'Unbounce 랜딩 CTA 7,900원 가격 명시 피벗으로 고관여 구매자 선별',
-                src: './assets/tiptree_53_랜딩페이지안의 불필요한 콘텐츠 제거 및 연계판매 퍼널.png',
-                alt: '랜딩페이지 7,900원 CTA 피벗'
+                title: '고객 VoC 기반 광고 시안: \'100년 전통 영국 왕실 납품 케찹\' 고관여 타겟팅 소구',
+                src: './assets/tiptree_56_페이스북 광고시안.png',
+                alt: 'Tiptree 영국 왕실 케찹 페이스북 광고시안'
             },
             {
                 tag: 'EVIDENCE',
-                title: '상세페이지 파손 면책 경고 삭제 → 네이버 톡톡 100% 안심 케어 자동화',
+                title: '상세페이지 파손 면책 경고 삭제 → 네이버 톡톡 100% 안심 케어 전환으로 이탈 마찰 해소',
                 src: './assets/tiptree_54_CS 방어로 있었던 상세페이지의 필독사항을 톡톡 일괄발.png',
-                alt: 'CS 파손 면책 문구 제거'
+                alt: 'CS 파손 면책 문구 제거 및 안심 케어'
             },
             {
                 tag: 'EVIDENCE',
-                title: '네이버 데이터랩 브랜드별 검색 쿼리 통계 및 잠재 수요 분석',
-                src: './assets/tiptree_12_검색어 통계 _하인즈 _ 오뚜기_ _ 블로그.png',
-                alt: '네이버 데이터랩 키워드 통계'
+                title: '풀퍼널 연계판매 배너: 상세페이지 하단 윌킨앤선즈 다른 소스·잼 모음 교차 판매 퍼널 구축',
+                src: './assets/tiptree_55_상세페이지에 있던 이미지를 케찹 연계판매로 상세페이지.png',
+                alt: '윌킨앤선즈 소스 및 잼 모음 연계판매 배너'
             }
         ],
-        detailLink: '../Portfolio-summary/growth.html',
-        detailLinkLabel: 'A4 요약 리포트 검증 ↗'
+        detailLink: './case2-tiptree.html',
+        detailLinkLabel: '상세 풀퍼널 CRO & VoC 리포트 보기 ↗'
     },
     {
         number: '03',
@@ -120,7 +120,7 @@ export const portfolioCases = [
                 mermaidId: 'django-review-guard'
             }
         ],
-        detailLink: 'https://github.com/ramyo564/Upgrade_Django4',
-        detailLinkLabel: 'GitHub 원문 소스코드 검증 ↗'
+        detailLink: './case3-django.html',
+        detailLinkLabel: '상세 기술 아키텍처 PoC 리포트 보기 ↗'
     }
 ];
