@@ -1147,3 +1147,78 @@ button {
 .hero-overview-diagram-wrap {
     margin: 3.5rem 0 1.5rem;
 }
+
+/* --------------------------------------------------------------------------
+   2.5. MINIMAL PLAYBOOK (4-Step Growth Operating Framework)
+   -------------------------------------------------------------------------- */
+.minimal-playbook {
+    padding: 4.5rem 0 3.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #060608;
+}
+
+.playbook-header {
+    margin-bottom: 2.5rem;
+}
+
+.playbook-headline {
+    font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0.5rem 0 0.75rem;
+}
+
+.playbook-sub {
+    font-size: 0.95rem;
+    color: #A1A1AA;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.playbook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.playbook-card {
+    background: #0E0E11;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.playbook-card:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.playbook-phase {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #10B981;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.playbook-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0.75rem;
+}
+
+.playbook-card-desc {
+    font-size: 0.88rem;
+    color: #A1A1AA;
+    line-height: 1.6;
+}
+
+.playbook-card-desc strong {
+    color: #F4F4F5;
+}

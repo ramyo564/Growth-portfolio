@@ -35,7 +35,7 @@ export const diagrams = {
         FetchItems --> Compare{"동일 옵션/상품 존재 여부"}
         Compare -- Yes --> IncQty["기존 유저 수량에 합산 (Quantity Merge)"]
         Compare -- No --> Rebind["게스트 CartItem 소유권을 유저 ID로 Rebinding"]
-        IncQty --> UnifiedCart["통합 장바구니 완성 (이탈 방지 100%)"]
+        IncQty --> UnifiedCart["통합 장바구니 완성 (무손실 보존)"]
         Rebind --> UnifiedCart
 
         classDef b fill:#161b22,stroke:#58a6ff,color:#c9d1d9;

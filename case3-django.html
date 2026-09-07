@@ -200,9 +200,25 @@
             background: #050507;
         }
     </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T84WT3B8');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T84WT3B8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- 1. Minimal Header -->
     <header class="detail-header">
         <div class="detail-header-inner">
@@ -231,7 +247,7 @@
 
                 <!-- Transparency Callout -->
                 <div class="honesty-banner">
-                    <strong>[100% TRANSPARENCY & FACT NOTICE]</strong><br>
+                    <strong>[엔지니어링 PoC 안내]</strong><br>
                     본 프로젝트는 실제 고객을 대상으로 상업적 매출을 운영한 상용 서비스가 아닙니다. 외부 오픈마켓 운영 과정에서 절감했던 <strong>"원시 행동 데이터 부재(Data Blackbox)"와 "결제 단계 이탈 마찰(Checkout Friction)"</strong>을 해결하기 위해, 그로스 마케터가 직접 소프트웨어 아키텍처를 정의하고 코드로 구현한 <strong>엔지니어링 개념 증명(PoC) 자산</strong>입니다.
                 </div>
 
@@ -243,7 +259,7 @@
                         <div class="metric-card-desc">카카오페이 REST API + PayPal Global SDK 연동</div>
                     </div>
                     <div class="detail-metric-card">
-                        <div class="metric-card-num">100% MERGE</div>
+                        <div class="metric-card-num">CART MERGE</div>
                         <div class="metric-card-label">장바구니 무손실 보존</div>
                         <div class="metric-card-desc">게스트 세션 장바구니 로그인 시 자동 병합</div>
                     </div>
@@ -283,6 +299,15 @@
                     </div>
                 </div>
 
+                <div class="act-callout" style="border-left-color: var(--accent-blue); margin-bottom: 2rem;">
+                    <div class="act-callout-title">
+                        <span>💡</span> Case 01 &amp; Case 02 실무에서 이어진 개발 동기 (The Origin Story)
+                    </div>
+                    <div class="act-callout-text">
+                        한국에 지사가 없는 영국 현지 회사(VeryBrits)에서 근무하며 Lush 광고를 최적화하고 Tiptree CRO를 진행할 당시, <strong>스마트스토어의 폐쇄적인 정책으로 인해 외부 광고의 구매 어트리뷰션(Attribution)을 서버사이드에서 직접 검증할 수 없었던 데이터 사각지대의 한계</strong>가 본 PoC의 직접적인 시작점이었습니다. "광고와 매출 간의 인과관계를 타사 플랫폼에 의존하지 않고, 마케터가 직접 서버 로그를 설계하고 결제 파이프라인을 통제해야만 진정한 그로스가 가능하다"는 결론에 도달하여 직접 Python/Django 풀스택 아키텍처를 설계하고 구현했습니다.
+                    </div>
+                </div>
+
                 <!-- Comparative Architecture Table -->
                 <h3 style="font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.75rem 0; color: #fff;">
                     [아키텍처 비교] 상용 이커머스 SaaS (Shopify/카페24/아임웹) vs Django Custom PoC
@@ -309,7 +334,7 @@
                             </td>
                             <td class="django-solution">
                                 <strong>서버사이드 1st-Party 이벤트 파이프라인</strong><br>
-                                - 세션 ID 기반 서버 요청/응답 직접 로깅 (유실률 0%)<br>
+                                - 세션 ID 기반 서버 요청/응답 직접 로깅 (클라이언트 차단 우회)<br>
                                 - PG 결제 승인 REST API의 원시 JSON 에러 페이로드를 RDBMS에 완전 적재 및 병목 규명
                             </td>
                         </tr>
@@ -323,7 +348,7 @@
                             <td class="django-solution">
                                 <strong>무손실 비회원→회원 Rebinding 알고리즘</strong><br>
                                 - 세션 쿠키 <code>cart_id</code>와 로그인 유저 간 소유권 자동 이전<br>
-                                - 옵션/상품 중복 시 기존 수량에 안전하게 원자적 합산 (전환율 100% 보존)
+                                - 옵션/상품 중복 시 기존 수량에 안전하게 원자적 합산 (장바구니 이탈 방지)
                             </td>
                         </tr>
                         <tr>
@@ -336,7 +361,7 @@
                             <td class="django-solution">
                                 <strong>DB 트랜잭션 실구매 검증 가드 (Review Guard)</strong><br>
                                 - <code>OrderProduct(ordered=True)</code> 실제 결제 완결 여부를 DB 레벨에서 외래키로 검증<br>
-                                - 미구매자 작성 원천 차단 및 평점 원자적 동기화
+                                - 미구매자 작성 사전 차단 및 평점 원자적 동기화
                             </td>
                         </tr>
                         <tr>
@@ -413,7 +438,7 @@ graph LR
                         </div>
                     </div>
                     <div class="evidence-footer-annotation">
-                        <strong>아키텍처 설계 포인트:</strong> 서로 다른 인터페이스를 가진 두 PG의 비동기 결제 응답을 <code>Payment</code> 원장 테이블로 규격화하고, <code>is_ordered = True</code> 갱신, 재고 차감, 카트 비우기를 하나의 원자적(Atomic) 데이터베이스 트랜잭션으로 보장하여 결제 누수 및 재고 정합성 오류를 원천 차단했습니다.
+                        <strong>아키텍처 설계 포인트:</strong> 서로 다른 인터페이스를 가진 두 PG의 비동기 결제 응답을 <code>Payment</code> 원장 테이블로 규격화하고, <code>is_ordered = True</code> 갱신, 재고 차감, 카트 비우기를 하나의 원자적(Atomic) 데이터베이스 트랜잭션으로 보장하여 결제 누수 및 재고 정합성 불일치를 방지했습니다.
                     </div>
                 </div>
             </div>
@@ -448,7 +473,7 @@ graph TB
     FetchItems --> Compare{"동일 옵션/상품 존재 여부"}
     Compare -- Yes --> IncQty["기존 유저 수량에 합산 (Quantity Merge)"]
     Compare -- No --> Rebind["게스트 CartItem 소유권을 유저 ID로 Rebinding"]
-    IncQty --> UnifiedCart["통합 장바구니 완성 (이탈 방지 100%)"]
+    IncQty --> UnifiedCart["통합 장바구니 완성 (무손실 보존)"]
     Rebind --> UnifiedCart
 
     classDef b fill:#161b22,stroke:#58a6ff,color:#c9d1d9;
@@ -460,7 +485,7 @@ graph TB
                         </div>
                     </div>
                     <div class="evidence-footer-annotation">
-                        <strong>전환 최적화 로직:</strong> 로그인 인증 직후 <code>session['cart_id']</code>를 조회하여, 해당 게스트 카트에 담긴 품목들을 RDBMS 유저 장바구니와 대조합니다. 동일 상품/옵션이 존재할 경우 수량(Quantity)을 합산하고, 신규 품목은 소유권을 유저 ID로 Rebinding하여 단 1개의 상품 정보도 유실되지 않도록 보장했습니다.
+                        <strong>전환 최적화 로직:</strong> 로그인 인증 직후 <code>session['cart_id']</code>를 조회하여, 해당 게스트 카트에 담긴 품목들을 RDBMS 유저 장바구니와 대조합니다. 동일 상품/옵션이 존재할 경우 수량(Quantity)을 합산하고, 신규 품목은 소유권을 유저 ID로 Rebinding하여 장바구니 품목의 안전한 연속성을 보장했습니다.
                     </div>
 
                     <!-- Python Code Snippet: Cart Merge -->
@@ -543,7 +568,7 @@ graph LR
                         </div>
                     </div>
                     <div class="evidence-footer-annotation">
-                        <strong>데이터 무결성 검증:</strong> <code>ReviewRating</code> 모델 생성 시 뷰 레이어와 모델 레이어 양단에서 <code>OrderProduct.objects.filter(user=request.user, product_id=product_id, ordered=True)</code>를 질의합니다. 실구매가 확인되지 않은 요청은 원천 거부되며, 리뷰 등록 시 상품 원장의 <code>averageReview</code>와 <code>countReview</code>가 원자적으로 재계산 동기화됩니다.
+                        <strong>데이터 무결성 검증:</strong> <code>ReviewRating</code> 모델 생성 시 뷰 레이어와 모델 레이어 양단에서 <code>OrderProduct.objects.filter(user=request.user, product_id=product_id, ordered=True)</code>를 질의합니다. 실구매가 확인되지 않은 요청은 사전 차단되며, 리뷰 등록 시 상품 원장의 <code>averageReview</code>와 <code>countReview</code>가 원자적으로 재계산 동기화됩니다.
                     </div>
 
                     <!-- Python Code Snippet: Review Guard -->
@@ -561,7 +586,7 @@ if request.user.is_authenticated:
 else:
     orderproduct = False
 
-# 2. 리뷰 제출(submit_review) 단계: 실구매 검증 방어 로직 (허위/어뷰징 원천 차단)
+# 2. 리뷰 제출(submit_review) 단계: 실구매 검증 방어 로직 (허위/어뷰징 사전 차단)
 @login_required(login_url="login")
 def submit_review(request, product_id):
     if request.method == "POST":
@@ -605,7 +630,7 @@ def submit_review(request, product_id):
                         <span>💻</span> 서드파티 쿠키 종말(Privacy Sandbox) 시대의 1st-Party 서버사이드 데이터 주권
                     </div>
                     <div class="act-callout-text">
-                        1. <strong>클라이언트 추적의 붕괴 극복 (Zero Telemetry Blindspot):</strong> Apple iOS 14.5+ ATT 및 Safari ITP, AdBlock 확산으로 인해 클라이언트 자바스크립트 픽셀 추적은 30~50%의 전환 데이터를 유실합니다. 본 PoC는 1st-Party 도메인의 서버사이드에서 세션 ID를 발급하고, HTTP 요청과 응답을 RDBMS에 직접 기록하여 유실률 0%의 데이터 주권을 확보했습니다.<br>
+                        1. <strong>클라이언트 추적의 붕괴 극복 (Zero Telemetry Blindspot):</strong> Apple iOS 14.5+ ATT 및 Safari ITP, AdBlock 확산으로 인해 클라이언트 자바스크립트 픽셀 추적은 30~50%의 전환 데이터를 유실합니다. 본 PoC는 1st-Party 도메인의 서버사이드에서 세션 ID를 발급하고, HTTP 요청과 응답을 RDBMS에 직접 기록하여 클라이언트 차단 환경에서도 견고한 데이터 수집 주권을 확보했습니다.<br>
                         2. <strong>PG 실패 원시 페이로드 캡처 (Raw Error Telemetry):</strong> 상용 SaaS가 가려버리는 카카오페이/PayPal의 결제 실패 원시 JSON 페이로드(예: 사용자 취소 <code>-702</code>, 잔액 부족 <code>-704</code>, 네트워크 타임아웃 등)를 서버에서 가로채 기록함으로써, 결제 단계의 이탈 원인을 수학적으로 규명할 수 있습니다.
                     </div>
                 </div>
@@ -798,6 +823,16 @@ class SessionEvent(models.Model):
             modalImg.alt = img.alt;
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
+
+            // Telemetry: unified select_content event dispatch
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'select_content',
+                content_type: 'evidence_image',
+                item_id: (img.alt || img.src || 'evidence_figure').slice(0, 100),
+                page_location: window.location.href,
+                page_title: document.title
+            });
         }
 
         function closeDetailModal() {

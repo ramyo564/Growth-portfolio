@@ -22,7 +22,7 @@ export const portfolioConfig = {
             { number: '4,514%', label: 'Blended ROAS 달성', desc: '소액 예산 6.3만원 → 매출 284만원' },
             { number: '53.5%↓', label: '광고비 예산 절감', desc: '여성 18~44 타겟 단일화 & 누수 차단' },
             { number: '87.1%', label: 'Unit Economics BEP', desc: '35명 VoC 기반 7,900원 CTA 피벗' },
-            { number: '100%', label: '1st-Party 데이터 통제', desc: 'Django + Dual PG 풀스택 자사몰 PoC' }
+            { number: '1ST-PARTY', label: '서버사이드 데이터 통제', desc: 'Django + Dual PG 풀스택 자사몰 PoC' }
         ]
     },
     sectionIntro: {

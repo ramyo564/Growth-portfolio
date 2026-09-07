@@ -57,9 +57,25 @@
             font-weight: 700;
         }
     </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T84WT3B8');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T84WT3B8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- 1. Minimal Header -->
     <header class="detail-header">
         <div class="detail-header-inner">
@@ -229,10 +245,10 @@
 
                 <ul class="takeaway-list">
                     <li class="takeaway-item">
-                        <strong>가설 1 (타겟 단일화):</strong> 남성 타겟을 100% 제거하고 <strong>'여성 18~44세' 단일 세그먼트로 집중</strong>하면, 광고비 예산을 50% 이상 절감하면서도 빈도를 1.20 수준으로 안정화할 수 있다.
+                        <strong>가설 1 (타겟 단일화):</strong> 남성 세그먼트를 제외하고 <strong>'여성 18~44세' 단일 세그먼트로 집중</strong>하면, 광고비 예산을 50% 이상 절감하면서도 빈도를 1.20 수준으로 안정화할 수 있다.
                     </li>
                     <li class="takeaway-item">
-                        <strong>가설 2 (킬러 소재 피벗):</strong> 샴푸 3종 분산 광고를 버리고, 한국 공식 백화점 매장가(50,000원) 대비 페퍼센트 직구 특가(32,000원, 36% 할인)를 직관적으로 때려 박는 <strong>'더티 단독 킬러 소재'</strong>에 예산을 몰아주면 전환율이 폭증할 것이다.
+                        <strong>가설 2 (킬러 소재 피벗):</strong> 샴푸 3종 분산 광고를 중단하고, 한국 공식 매장가(50,000원) 대비 직구 특가(32,000원, 36% 할인)를 직관적으로 비교 제시하는 <strong>'더티 단독 킬러 소재'</strong>에 예산을 집중하면 구매 전환율을 극대화할 수 있다.
                     </li>
                 </ul>
             </div>
@@ -321,8 +337,8 @@
                         <img src="./assets/lush_15_1_ 검증__해당 지갑 문의 같은 경우 처음 질문이 재.png" alt="네이버 수수료 및 검색 유입 검증 자료">
                     </div>
                     <div class="evidence-footer-annotation">
-                        <strong>Search Trigger 인과관계 완벽 실측:</strong><br>
-                        - <strong>링크 클릭수와 유입수의 괴리:</strong> 메타 광고의 인바운드 링크 클릭은 15~49건에 불과했습니다. 그러나 메타 광고 도달이 1,600명을 돌파한 익일, 네이버 스마트스토어 해외직구 유입수는 <strong>+3,000명 이상 급증</strong>했습니다.<br>
+                        <strong>Search Trigger 시계열 인과관계 분석:</strong><br>
+                        - <strong>시계열 스파이크 동기화:</strong> 2차 광고 라이브 직후(3월 5일), 메타의 단순 인바운드 링크 클릭은 15~49건에 불과했으나, 광고 노출(1,600명 도달)과 완전히 동일한 시점에 네이버 스마트스토어의 '페퍼센트 / 러쉬 더티' 직접 검색 유입수가 <strong>+3,000명 이상 폭증</strong>하며 외부 노이즈(자연 유행)가 아닌 광고 노출에 의한 직접적인 검색 트리거임을 시계열로 증명했습니다.<br>
                         - <strong>수수료 0.24% 영수증 물증:</strong> 총 판매금액 2,844,300원 중 네이버 쇼핑 연동 수수료(정상 2%)는 <strong>단 6,943원(0.24%)</strong>만 정산되었습니다. 고객들이 인스타 링크를 바로 누르지 않고 네이버에 '페퍼센트' 또는 '더티 바디스프레이'를 직접 검색하여 유입되었기 때문에 쇼핑 연동 수수료가 면제되었음을 실측 영수증으로 입증했습니다.
                     </div>
                 </div>
@@ -348,24 +364,34 @@
             </div>
         </section>
 
-        <!-- 7. Act 5: Strategic Insights & Roadmap -->
+        <!-- 7. Act 5: Strategic Post-Mortem & The Engineering Catalyst -->
         <section class="act-section">
             <div class="detail-container">
                 <div class="act-header">
-                    <span class="act-badge">ACT 05 // BUSINESS SCALING & ROADMAP</span>
-                    <h2 class="act-title">그로스 엔지니어의 비즈니스 확장 인사이트</h2>
+                    <span class="act-badge">ACT 05 // STRATEGIC POST-MORTEM &amp; THE TECHNICAL CATALYST</span>
+                    <h2 class="act-title">냉철한 비즈니스 회고 : 왜 스케일업을 중단했는가? 그리고 개발로 향한 계기</h2>
                     <p class="act-description">
-                        마케팅 캠페인의 성공에 머무르지 않고, 공급망 병목을 선제 해결하여 비즈니스 지속 가능성을 확보했습니다.
+                        ROAS 4,514%라는 숫자에 도취되지 않고, 공급망/인력 한계와 크로스셀링 가설 기각을 냉정히 분석하여 캠페인 확장을 중단했습니다. 그리고 이 과정에서 겪은 플랫폼 데이터 사각지대는 직접 풀스택 개발(Case 03)로 뛰어들게 된 결정적 전환점이 되었습니다.
                     </p>
                 </div>
 
                 <div class="act-callout">
                     <div class="act-callout-title">
-                        <span>💡</span> 물량 폭증이 가져온 공급망 혁신
+                        <span>🛑</span> 비즈니스 스케일업 중단의 3대 핵심 사유 (현장 오퍼레이션 &amp; 가설 기각)
                     </div>
                     <div class="act-callout-text">
-                        1. <strong>스프레이 배송 누수 해결:</strong> 주문량이 주간 172건으로 폭증하면서, 액체 바디스프레이 노즐의 고질적인 항공 배송 누수 문제를 조기에 발견했습니다. 런던 현지 완충재 패키징 프로세스를 개선하여 향후 프리미엄 액체류 전반의 배송 경쟁력을 선제 확보했습니다.<br>
-                        2. <strong>B2B 및 독점 공급망 확장:</strong> 런던 현지 물량 공급선을 바탕으로 묶음 배송 객단가를 상승시켰으며, 향후 스마트스토어 수수료 종속을 벗어나는 독립 자사몰 구축의 강력한 트리거가 되었습니다.
+                        1. <strong>영국 현지 포장 인력의 물리적 한계:</strong> 당사는 한국에 지사가 없는 <strong>영국 현지 회사(VeryBrits)</strong>였으며, 본인 역시 <strong>영국 런던 현지에서 근무</strong>하며 소싱, 그로스, 물류를 총괄하고 있었습니다. 주간 주문량이 172건으로 증가하면서 영국 현지 물류 현장에서 직접 수기 검수 및 완충 포장을 감당할 수 있는 현지 인력 리소스가 포화 상태에 도달했습니다. 현지 인력 증원 없는 무리한 추가 증액은 오발송과 품질 저하를 초래할 위험이 있었습니다.<br>
+                        2. <strong>비자체 생산(소싱)의 재고 수급 병목:</strong> 자체 제조가 아닌 영국 현지 부티크 구매대행 특성상, 현지 재고 수급 한계로 배송 리드타임이 2주 이상 지연되기 시작했습니다. 가격 경쟁력이 있더라도 2주를 초과하면 배송 지연 리뷰가 증가하여 브랜드 신뢰도가 훼손되므로, 추가 광고비 집행은 비용 대비 실익이 낮아지는 임계점이었습니다.<br>
+                        3. <strong>명품 크로스셀(Cross-selling) 전략 가설의 기각:</strong> 본래 전사적 전략은 러쉬를 엔트리 상품으로 삼아 정품 신뢰를 쌓은 뒤 객단가가 높은 고마진 명품 패션(지갑/가방)으로 유도하는 것이었습니다. 그러나 구매 데이터를 정밀 교차 검증한 결과, <strong>러쉬 구매자와 명품 구매자 간의 교차 구매 상관관계가 확인되지 않았습니다.</strong> 판매 채널만 같을 뿐 2030 영타겟과 고단가 명품 소비층은 완전히 분리되어 있었고, 구매대행 비즈니스의 구조적 한계를 인정하고 추가 확장을 멈추었습니다.
+                    </div>
+                </div>
+
+                <div class="act-callout" style="border-left-color: var(--accent-blue); margin-top: 1.5rem;">
+                    <div class="act-callout-title">
+                        <span>⚡</span> 소프트웨어 엔지니어링으로의 전환 계기 (The Technical Catalyst)
+                    </div>
+                    <div class="act-callout-text">
+                        네이버 스마트스토어의 폐쇄적 정책으로 인해, 외부 메타 광고로 발생한 실질 구매 전환율(Attribution)을 서버사이드에서 직접 검증하지 못하고 간접 지표로 추정해야 하는 데이터 사각지대의 한계를 절감했습니다. <strong>"외부 플랫폼의 데이터 블랙박스 안에서는 정밀한 그로스 엔지니어링에 한계가 있다. 마케터가 직접 서버 로그를 설계하고, 결제 파이프라인을 통제해야 한다"</strong>는 결론에 도달했고, 이는 곧이어 <strong>Case 03 (Django Full-Stack 자사몰 PoC)</strong>을 직접 개발하게 된 결정적 계기가 되었습니다.
                     </div>
                 </div>
 
@@ -406,6 +432,16 @@
             modalImg.alt = img.alt;
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
+
+            // Telemetry: unified select_content event dispatch
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'select_content',
+                content_type: 'evidence_image',
+                item_id: (img.alt || img.src || 'evidence_figure').slice(0, 100),
+                page_location: window.location.href,
+                page_title: document.title
+            });
         }
 
         function closeDetailModal() {

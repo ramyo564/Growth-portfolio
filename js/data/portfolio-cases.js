@@ -53,11 +53,11 @@ export const portfolioCases = [
         shortTitle: '35명 VoC & 7,900원 CTA 피벗',
         highlightMetric: 'BEP 달성 (마진 87.1%)',
         title: 'Tiptree 팁트리 프리미엄 식품군 풀퍼널 CRO : 35명 전화 VoC 발굴 & 7,900원 가격 투명성 피벗으로 BEP 달성',
-        summary: '시중 케찹 대비 15,000원대 초고가 프리미엄 상품의 초기 구매 전환율 0%(이탈 100%) 병목을 극복하기 위해, 영국 현지에서 35명 고객 전원 전화 인터뷰를 직접 단행하여 이탈 요인(유리병 파손 불안 및 가격 불투명성)을 발굴하고, 상세페이지 파손 면책 경고 삭제 및 7,900원 CTA 선제 노출 피벗으로 28병 판매 시점에 광고비 전액 회수(BEP, 마진 87.1%)를 달성했습니다.',
+        summary: '시중 케찹 대비 15,000원대 초고가 프리미엄 상품의 초기 구매 전환 0건의 이탈 병목을 극복하기 위해, 영국 현지에서 한국 고객 35명 대상 1:1 국제전화 인터뷰를 직접 진행하여 이탈 요인(유리병 파손 불안 및 가격 불투명성)을 발굴하고, 상세페이지 파손 면책 경고 삭제 및 7,900원 CTA 선제 노출 피벗으로 28병 판매 시점에 광고비 전액 회수(BEP, 마진 87.1%)를 달성했습니다.',
         metrics: [
             { label: 'UNIT ECONOMICS', value: '공헌이익 마진 87.1% 회수', highlight: true },
             { label: 'BEP MILESTONE', value: '28병 판매 시점 광고비 전액 회수' },
-            { label: 'QUALITATIVE VOC', value: '35명 고객 전원 국제전화 심층 인터뷰' },
+            { label: 'QUALITATIVE VOC', value: '35명 고객 대상 1:1 국제전화 심층 인터뷰' },
             { label: 'ORGANIC PIPELINE', value: '주간 20개 정기 판매 캐시카우 안착' }
         ],
         evidence: [
@@ -75,7 +75,7 @@ export const portfolioCases = [
             },
             {
                 tag: 'EVIDENCE',
-                title: '상세페이지 파손 면책 경고 삭제 → 네이버 톡톡 100% 안심 케어 전환으로 이탈 마찰 해소',
+                title: '상세페이지 파손 면책 경고 삭제 → 네이버 톡톡 무상 맞교환 정책 전환으로 이탈 마찰 해소',
                 src: './assets/tiptree_54_CS 방어로 있었던 상세페이지의 필독사항을 톡톡 일괄발.png',
                 alt: 'CS 파손 면책 문구 제거 및 안심 케어'
             },
@@ -99,7 +99,7 @@ export const portfolioCases = [
         summary: '스마트스토어 등 외부 플랫폼의 1st-Party 이벤트 수집 불가(데이터 블랙박스) 및 수기 카드 결제 이탈 한계를 기술적으로 극복하기 위해, 비즈니스 요구사항을 기술 스펙으로 직접 정의하고 Django + Dual PG(카카오페이+PayPal) + 자체 RDBMS 세션 로깅으로 설계하고 검증한 풀스택 아키텍처 PoC입니다.',
         metrics: [
             { label: 'PAYMENT GATEWAY', value: '카카오페이 REST API + PayPal SDK 연동', highlight: true },
-            { label: 'CART CONVERSION', value: '게스트 세션 장바구니 100% 무손실 병합' },
+            { label: 'CART CONVERSION', value: '게스트 세션 장바구니 무손실 자동 병합' },
             { label: 'REVIEW INTEGRITY', value: 'Order 결제 트랜잭션 DB 완료 검증 가드' },
             { label: '1ST-PARTY DATA', value: 'RDBMS 세션 기반 전 여정 행동 로그 자체 통제' }
         ],
