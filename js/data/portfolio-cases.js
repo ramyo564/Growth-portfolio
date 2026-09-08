@@ -12,7 +12,7 @@ export const portfolioCases = [
         title: 'Lush 러쉬 퍼포먼스 광고 최적화 : 타겟팅 재설계 기반 광고비 53.5% 절감 및 Blended ROAS 4,514% 달성',
         summary: '광범위 타겟팅의 높은 빈도(1.83) 피로 누수 문제를 구매 기여도 88.4%의 여성 18~44세 단일 세그먼트로 집중 격리하고, 5종 위닝 소재 A/B 테스트와 네이버 스마트스토어 오가닉 검색 트리거(Search Trigger)를 규명하여 네이버 수수료 0.24% 수준 방어 및 주문 2.7배 성장을 달성했습니다.',
         metrics: [
-            { label: 'BLENDED ROAS', value: '4,514% (소액 예산 6.3만 → 284만)', highlight: true },
+            { label: 'BLENDED ROAS', value: '4,514% (주문 전환 172%↑)', highlight: true },
             { label: 'AD SPEND CUT', value: '53.5%↓ (남성 전환 누수 차단)' },
             { label: 'ORDERS SURGE', value: '주간 99건 → 172건 (+73.7%↑)' },
             { label: 'FEE DEFENSE', value: '네이버 쇼핑 수수료 0.24% 방어' }
