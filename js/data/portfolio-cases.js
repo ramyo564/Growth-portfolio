@@ -6,7 +6,7 @@ export const portfolioCases = [
     {
         number: '01',
         category: 'PERFORMANCE MARKETING',
-        period: 'VeryBrits 실무 (기여도 100%)',
+        period: 'VeryBrits 실무',
         shortTitle: 'Lush 메타 광고 최적화',
         highlightMetric: 'ROAS 4,514% (광고비 -53.5%)',
         title: 'Lush 러쉬 퍼포먼스 광고 최적화 : 타겟팅 재설계 기반 광고비 53.5% 절감 및 Blended ROAS 4,514% 달성',
@@ -49,16 +49,16 @@ export const portfolioCases = [
     {
         number: '02',
         category: 'FULL-FUNNEL CRO & UNIT ECONOMICS',
-        period: 'VeryBrits 실무 (기여도 100%)',
+        period: 'VeryBrits 실무',
         shortTitle: '35명 VoC & 7,900원 CTA 피벗',
         highlightMetric: 'BEP 달성 (마진 87.1%)',
         title: 'Tiptree 팁트리 프리미엄 식품군 풀퍼널 CRO : 35명 전화 VoC 발굴 & 7,900원 가격 투명성 피벗으로 BEP 달성',
-        summary: '시중 케찹 대비 15,000원대 초고가 프리미엄 상품의 초기 구매 전환 0건의 이탈 병목을 극복하기 위해, 영국 현지에서 한국 고객 35명 대상 1:1 국제전화 인터뷰를 직접 진행하여 이탈 요인(유리병 파손 불안 및 가격 불투명성)을 발굴하고, 상세페이지 파손 면책 경고 삭제 및 7,900원 CTA 선제 노출 피벗으로 28병 판매 시점에 광고비 전액 회수(BEP, 마진 87.1%)를 달성했습니다.',
+        summary: '시중 케찹 대비 15,000원대 초고가 프리미엄 상품의 초기 구매 전환 0건의 이탈 병목을 극복하기 위해, 영국 현지에서 한국 고객 35명 대상 1:1 국제전화 인터뷰를 직접 진행하여 이탈 요인(유리병 파손 불안 및 가격 불투명성)을 발굴하고, 상세페이지 파손 면책 경고 삭제 및 7,900원 CTA 선제 노출 피벗으로 초기 광고비를 전액 조기 회수(BEP, 마진 87.1%)를 달성했습니다.',
         metrics: [
             { label: 'UNIT ECONOMICS', value: '공헌이익 마진 87.1% 회수', highlight: true },
-            { label: 'BEP MILESTONE', value: '28병 판매 시점 광고비 전액 회수' },
+            { label: 'BEP MILESTONE', value: '초기 광고비 전액 조기 회수 (BEP)' },
             { label: 'QUALITATIVE VOC', value: '35명 고객 대상 1:1 국제전화 심층 인터뷰' },
-            { label: 'ORGANIC PIPELINE', value: '주간 20개 정기 판매 캐시카우 안착' }
+            { label: 'ORGANIC PIPELINE', value: '정기 구매 캐시카우 파이프라인 안착' }
         ],
         evidence: [
             {
@@ -92,7 +92,7 @@ export const portfolioCases = [
     {
         number: '03',
         category: 'TECHNICAL COMMERCE ARCHITECTURE POC',
-        period: '개인 엔지니어링 PoC (기여도 100%)',
+        period: '독립 인프라 PoC',
         shortTitle: 'Django 자사몰 아키텍처 PoC',
         highlightMetric: '1st-Party 로그 통제 & Dual PG',
         title: 'Django E-Commerce : 플랫폼 데이터 사각지대 해소와 결제 전환 최적화를 위한 풀스택 자사몰 PoC',
@@ -126,7 +126,7 @@ export const portfolioCases = [
     {
         number: '04',
         category: 'AI WORKFLOW AUTOMATION & MULTI-AGENT',
-        period: '개인 아키텍처 프로젝트 (기여도 100%)',
+        period: '개인 아키텍처 프로젝트',
         shortTitle: 'Overmind V2 AI 멀티 에이전트',
         highlightMetric: '탐색 시간 96.5%↓ (392s → 13.8s)',
         title: 'Overmind V2 : 마케팅 리서치 & 분석 자동화를 위한 AI 멀티 에이전트 오케스트레이션',
